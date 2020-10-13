@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Frame.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #008000; font-weight: bold;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Frame.java</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">package </span>code;
+<a name="l2"><span class="ln">2    </span></a>
+<a name="l3"><span class="ln">3    </span></a><span class="s0">import </span>javax.swing.*;
+<a name="l4"><span class="ln">4    </span></a><span class="s0">import </span>java.awt.*;
+<a name="l5"><span class="ln">5    </span></a>
+<a name="l6"><span class="ln">6    </span></a><span class="s0">class </span>Frame <span class="s0">extends </span>JFrame {
+<a name="l7"><span class="ln">7    </span></a>    Frame(String title) {
+<a name="l8"><span class="ln">8    </span></a>        <span class="s0">this</span>.setTitle(title);
+<a name="l9"><span class="ln">9    </span></a>        <span class="s0">this</span>.setIconImage(Toolkit.getDefaultToolkit().getImage(<span class="s2">&quot;src/image/windowIcon.png&quot;</span>));
+<a name="l10"><span class="ln">10   </span></a>        <span class="s0">this</span>.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+<a name="l11"><span class="ln">11   </span></a>        Panel Panel = <span class="s0">new </span>Panel();
+<a name="l12"><span class="ln">12   </span></a>        <span class="s0">this</span>.setResizable(<span class="s0">false</span>);
+<a name="l13"><span class="ln">13   </span></a>        <span class="s0">this</span>.add(Panel);
+<a name="l14"><span class="ln">14   </span></a>        <span class="s0">this</span>.pack();
+<a name="l15"><span class="ln">15   </span></a>        <span class="s0">this</span>.setVisible(<span class="s0">true</span>);
+<a name="l16"><span class="ln">16   </span></a>    }
+<a name="l17"><span class="ln">17   </span></a>}</pre>
+</body>
+</html>
